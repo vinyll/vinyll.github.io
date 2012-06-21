@@ -1,0 +1,57 @@
+body {
+	font-size: 13px;
+}
+
+#header h2 a {
+	color: #FFF;
+	font-size: 1.5em;
+}
+
+#header h1 {
+	font-size: 1em;
+}
+
+#intro, #intro h3 {
+	font-size: 1em;
+}
+
+#intro h3 {
+	margin: 10px 0;
+}
+#intro strong {
+	font-weight: normal;
+}
+
+#contactform .row label {
+	display: block;
+	float:   none;
+	
+}
+
+#contactform label {
+	margin: 0;
+	letter-spacing: .2em;
+}
+#contactform textarea {
+	font-family: inherit;
+	letter-spacing: .1em;
+}
+#contactform textarea, #contactform .row input {
+	letter-spacing: .1em;
+}
+#contactform #fullname_row, #contactform #emailaddress_row {
+	width: 42%;
+	float: left;
+}
+#contactform #fullname_row {
+	margin-right: 10%;
+}
+#contactform #message_row {
+	padding-top: 70px;
+}
+
+#contactform .notice {
+	width: 95%;
+	margin-bottom:	10px;
+}
+
