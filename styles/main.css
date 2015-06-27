@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Lora, serif;
+  line-height: 1.6;
+  background-color: #f6f6f6;
+  color: #2E325D;
+}
+
+header {
+  background: transparent url("../images/nyc-bagpack-640.jpg") no-repeat bottom right;
+  position: relative;
+  height: 80%;
+  min-height: 300px;
+  max-height: 575px;
+}
+
+header a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+header h1,
+header h2 {
+  color: #333;
+  text-shadow: 0 0 2px #f6f6f6;
+  background-color: rgba(230, 230, 230, .5);
+  margin: 0;
+}
+header h1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+header h2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: auto 2em;
+}
+
+main {
+  padding: 5%;
+}
+
+main h1 {
+  font-size: 2em;
+  text-align: center;
+}
+main > section:not(:last-child) {
+  border-bottom: 1px dotted #333;
+  padding-bottom: 1.5em;
+}
+
+p {
+  font-size: 1.4em;
+}
