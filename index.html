@@ -85,8 +85,8 @@
       <h1>Communiquer</h1>
 
       <h2>Contact numérique</h2>
-      <p>Vous pouvez me contacter par <a href="http://scopyleft.fr">scopyleft</a>, sur <a href="http://twitter.com/vinyll" lang="en" title="Vincent Agnano sur Twitter">Twitter</a>, <a href="http://www.linkedin.com/in/vincentagnano" lang="en" title="CV architecte/développeur django, Javascript et NodeJS">CV</a>, <a href="http://www.delicious.com/v.agnano" title="Ressources et marques-pages">Delicious</a>,
-        <a href="http://twitter.com/vinyll" title="Contacter Vinyll sur Twitter">Twitter</a></p>
+      <p>Vous pouvez me contacter par <a href="http://scopyleft.fr">scopyleft</a>, <a href="http:vinyll.github.io" class="email">email</a>, sur <a href="http://twitter.com/vinyll" lang="en" title="Vincent Agnano sur Twitter">Twitter</a>, <a href="http://www.linkedin.com/in/vincentagnano" lang="en" title="CV architecte/développeur django, Javascript et NodeJS">LinkedIn</a>.
+      </p>
 
       <h2>Recherche d'un développeur</h2>
       <p>Je suis actuellement en poste chez <a href="http://scopyleft.fr" title="coopérative de développement web">scopyleft</a>. J'y ai une bonne qualité de vie avec des projets et clients que l'on sélectionne par affinité. Je ne cherche donc pas d'emploi en ce moment, mais nous pourrions éventuellement travailler ensemble.</p>
@@ -94,6 +94,16 @@
     </section>
   </main>
 </body>
+<script>
+  var em = document.querySelector('.email');
+  em.onmouseover = function(evt) {
+    var text = "{first}@{domain}"
+               .replace('{first}', "vincent.agnano+githubio")
+               .replace('{domain}', "scopyleft.fr");
+    evt.target.attributes['href'].value = "mailto:{text}".replace('{text}', text);
+    evt.target.title = "Envoyer un mail à {text}".replace('{text}', text);
+  }
+</script>
 <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-2011654-7']);_gaq.push(['_trackPageview']);
 (function() {
 var ga = document.createElement('script'); ga.type = 'text/javascript';ga.async = true;
