@@ -17,44 +17,64 @@ body {
   color: #2E325D;
 }
 
-header {
-  background: transparent url("../images/nyc-bagpack-640.jpg") no-repeat bottom right;
+body > header {
+  background: transparent url("../images/nyc-bagpack-960.jpg") no-repeat bottom right;
   position: relative;
   height: 80%;
   min-height: 300px;
-  max-height: 575px;
+  max-height: 530px;
 }
 
-header a {
+main a {
   color: inherit;
   text-decoration: inherit;
 }
 
-header h1,
-header h2 {
+main > header {
+  border-bottom: 1px solid #333;
+  padding-bottom: 2em;
+}
+main > header h1,
+main > header h2 {
   color: #333;
-  text-shadow: 0 0 2px #f6f6f6;
-  background-color: rgba(230, 230, 230, .5);
+  font-size: 1.2em;
+  font-weight: 100;
   margin: 0;
 }
-header h1 {
-  position: absolute;
-  bottom: 0;
+main > header h2 {
+    font-size: 1.6em;
+}
+main > header small {
+  font-size: .7em;
+}
+main > header small::before {
+  content: " (";
+}
+main > header small::after {
+  content: ") ";
+}
+main > header span {
+  display: block;
+}
+
+main nav {
+  float: right;
+  margin-top: -95px;
+}
+main nav a {
+  display: inline-block;
+  width: 25px;
+}
+main nav a img {
   width: 100%;
-  text-align: center;
 }
-header h2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: auto 2em;
-}
+
 
 main {
   padding: 5%;
 }
 
-main h1 {
+main > section h1 {
   font-size: 2em;
   text-align: center;
 }

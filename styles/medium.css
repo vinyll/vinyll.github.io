@@ -1,4 +1,17 @@
-header {
-  background-image: url(../images/nyc-bagpack-1024.jpg);
-  max-height: 800px;
+body > header {
+  background-image: url(../images/nyc-bagpack-vertical.jpg);
+  width: 400px;
+  height: inherit;
+  max-height: inherit;
+  display: inline-block;
+  position: fixed;
+}
+
+main {
+  display: inline-block;
+  margin-left: 400px;
+}
+main nav {
+  float: inherit;
+  margin-top: inherit;
 }
