@@ -8,6 +8,10 @@ body > header {
   position: fixed;
 }
 
+body > header > a {
+  display: none;
+}
+
 main {
   display: inline-block;
   margin-left: 400px;
@@ -15,6 +19,7 @@ main {
   top: inherit;
   background-color: inherit;
 }
+
 main nav {
   float: inherit;
   margin-top: inherit;
