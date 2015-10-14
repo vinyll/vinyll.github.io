@@ -19,10 +19,18 @@ body {
 
 body > header {
   background: transparent url("../images/nyc-bagpack-960.jpg") no-repeat bottom right;
-  position: relative;
-  height: 80%;
+  position: fixed;
+  height: 75%;
   min-height: 300px;
   max-height: 530px;
+  width: 100%;
+}
+
+main {
+  position: absolute;
+  padding: 5%;
+  top: 75%;
+  background-color: #fff;
 }
 
 main header a {
@@ -59,7 +67,7 @@ main > header span {
 
 main nav {
   float: right;
-  margin-top: -95px;
+  margin-top: -32px;
 }
 main nav a {
   display: inline-block;
@@ -67,11 +75,6 @@ main nav a {
 }
 main nav a img {
   width: 100%;
-}
-
-
-main {
-  padding: 5%;
 }
 
 main > section h1 {
