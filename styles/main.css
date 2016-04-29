@@ -17,6 +17,10 @@ body {
   color: #2E325D;
 }
 
+a {
+  color: #22a;
+}
+
 body > header {
   background: transparent url("../images/nyc-bagpack-960.jpg") no-repeat bottom right;
   position: fixed;
@@ -105,6 +109,11 @@ main > section h1 {
   font-size: 2em;
   text-align: center;
 }
+main > section h2 {
+  margin: 1em 0 .5em 0;
+  font-size: 2em;
+  text-align: center;
+}
 main > section:not(:last-child) {
   border-bottom: 1px dotted #333;
   padding-bottom: 1.5em;
@@ -112,4 +121,18 @@ main > section:not(:last-child) {
 
 p {
   font-size: 1.4em;
+}
+
+.permalink {
+  color: transparent;
+  text-decoration: none;
+  font-size: 1em;
+}
+.permalink:before {
+  content: '¶ ';
+}
+
+h1:hover .permalink,
+h2:hover .permalink {
+  color: #ccc;
 }
