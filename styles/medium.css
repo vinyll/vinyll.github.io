@@ -24,3 +24,8 @@ main nav {
   float: inherit;
   margin-top: inherit;
 }
+
+.switch-i18n {
+  margin-top: -32px;
+  margin-right: inherit;
+}

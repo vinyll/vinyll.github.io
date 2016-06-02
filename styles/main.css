@@ -127,12 +127,12 @@ main > section:not(:last-child) {
 p {
   font-size: 1.4em;
 }
-
 .switch-i18n {
   display: block;
   width: 32px;
   height: 32px;
-  margin-top: -32px;
+  margin-top: -94px;
+  margin-right: -84px;
   text-indent: -1000%;
   background-image: url(../images/en.png);
   background-size: 100% auto;
