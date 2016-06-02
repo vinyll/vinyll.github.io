@@ -123,6 +123,23 @@ p {
   font-size: 1.4em;
 }
 
+.switch-i18n {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px;
+  text-indent: -1000%;
+  background-image: url(../images/en.png);
+  background-size: 100% auto;
+  float: right;
+}
+.switch-i18n[lang=en] {
+  background-image: url(../images/en.png);
+}
+.switch-i18n[lang=fr] {
+  background-image: url(../images/fr.png);
+}
+
 .permalink {
   color: transparent;
   text-decoration: none;
