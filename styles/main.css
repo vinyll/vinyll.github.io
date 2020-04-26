@@ -25,9 +25,9 @@ h1 {
   font-family: Lora, Serif;
   font-size: 2em;
 }
- h2 {
-   margin: 2rem 1rem 0 0;
- }
+h2 {
+  margin: 2rem 1rem 0 0;
+}
 
 a {
   color: #77c;
@@ -40,7 +40,7 @@ a {
   width: 32px;
   height: 32px;
   margin-top: -94px;
-  margin-right: -84px;
+  margin-right: -130px;
   text-indent: -1000%;
   background-image: url(../images/en.png);
   background-size: 100% auto;
@@ -88,33 +88,27 @@ main header a {
   text-decoration: inherit;
 }
 
-main > header {
-  border-bottom: 1px solid #333;
-  padding-bottom: 2em;
-}
-main > header h1 {
+main header h1 {
   font-size: .88em;
 }
-main > header small {
+main header small {
   font-size: .7em;
 }
-main > header small::before {
+main header small::before {
   content: " (";
 }
-main > header small::after {
+main header small::after {
   content: ") ";
 }
-main > header span {
+main header span {
   display: block;
 }
 
-main nav {
-  float: right;
-  margin-top: -32px;
+main nav.social {
+  display: flex;
 }
 main nav a {
   display: inline-block;
-  width: 25px;
 }
 main nav a img {
   width: 100%;

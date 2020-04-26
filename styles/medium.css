@@ -17,6 +17,7 @@ main {
   background-color: inherit;
   overflow: scroll;
   flex: 1;
+  padding: 0 2rem;
 }
 main > .wrapper {
   max-width: 50rem;
@@ -28,8 +29,14 @@ main article h1 {
 }
 
 main nav {
-  float: inherit;
   margin-top: inherit;
+}
+main nav a {
+  margin-right: .3rem;
+}
+
+main nav.social a {
+  width: 24px;
 }
 
 .switch-i18n {
