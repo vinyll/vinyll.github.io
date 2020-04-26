@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lora);
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Open+Sans&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -13,21 +12,51 @@ html, body {
 body {
   font-family: Lora, serif;
   line-height: 1.6;
-  background-color: #f6f6f6;
-  color: #2E325D;
+  color: #777;
+  font-size: 18px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-weight: normal;
+}
+h1 {
+  font-family: Lora, Serif;
+  font-size: 2em;
+}
+ h2 {
+   margin: 2rem 1rem 0 0;
+ }
+
 a {
-  color: #22a;
+  color: #77c;
+}
+
+/* layout */
+
+.switch-i18n {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-top: -94px;
+  margin-right: -84px;
+  text-indent: -1000%;
+  background-image: url(../images/en.png);
+  background-size: 100% auto;
+  float: right;
+  overflow: hidden;
+}
+.switch-i18n[lang=en] {
+  background-image: url(../images/en.png);
+}
+.switch-i18n[lang=fr] {
+  background-image: url(../images/fr.png);
 }
 
 body > header {
   background: transparent url("../images/nyc-bagpack-960.jpg") no-repeat bottom right;
-  position: fixed;
-  height: 75%;
-  min-height: 300px;
-  max-height: 530px;
-  width: 100%;
+  background-size: cover;
   text-align: center;
 }
 
@@ -54,13 +83,6 @@ body > header > a:hover {
   border-color: #ccc;
 }
 
-main {
-  position: absolute;
-  padding: 5%;
-  top: 75%;
-  background-color: #fff;
-}
-
 main header a {
   color: inherit;
   text-decoration: inherit;
@@ -70,15 +92,8 @@ main > header {
   border-bottom: 1px solid #333;
   padding-bottom: 2em;
 }
-main > header h1,
-main > header h2 {
-  color: #333;
-  font-size: 1.2em;
-  font-weight: 100;
-  margin: 0;
-}
-main > header h2 {
-    font-size: 1.6em;
+main > header h1 {
+  font-size: .88em;
 }
 main > header small {
   font-size: .7em;
@@ -105,56 +120,25 @@ main nav a img {
   width: 100%;
 }
 
-main > section h1,
-main > section h2 {
-  font-family: Helvetica, sans-serif;
+main article h1 {
   text-align: center;
-  font-weight: normal;
-}
-main > section h1 {
-  font-size: 2.5em;
-}
-main > section h2 {
-  margin: 1.5em 0 0 0;
-  font-size: 2em;
-  text-align: center;
-}
-main > section:not(:last-child) {
-  border-bottom: 1px dotted #333;
-  padding-bottom: 1.5em;
+  position: relative;
 }
 
-p {
-  font-size: 1.4em;
+main article h1:before,
+main article h1:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 25%;
+  height: 1px;
+  content: '\a0';
+  background-color: #59c;
 }
-.switch-i18n {
-  display: block;
-  width: 32px;
-  height: 32px;
-  margin-top: -94px;
-  margin-right: -84px;
-  text-indent: -1000%;
-  background-image: url(../images/en.png);
-  background-size: 100% auto;
-  float: right;
+main article h1:before {
+  margin-left: -30%;
+  text-align: right;
 }
-.switch-i18n[lang=en] {
-  background-image: url(../images/en.png);
-}
-.switch-i18n[lang=fr] {
-  background-image: url(../images/fr.png);
-}
-
-.permalink {
-  color: transparent;
-  text-decoration: none;
-  font-size: 1em;
-}
-.permalink:before {
-  content: '¶ ';
-}
-
-h1:hover .permalink,
-h2:hover .permalink {
-  color: #ccc;
+main article h1:after {
+  margin-left: 5%;
 }

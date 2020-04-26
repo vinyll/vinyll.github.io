@@ -1,11 +1,10 @@
+body {
+  display: flex;
+}
 body > header {
   display: inherit;
   background-image: url(../images/nyc-bagpack-vertical.jpg);
   width: 400px;
-  height: inherit;
-  max-height: inherit;
-  display: inline-block;
-  position: fixed;
 }
 
 body > header > a {
@@ -13,11 +12,19 @@ body > header > a {
 }
 
 main {
-  display: inline-block;
-  margin-left: 400px;
   position: inherit;
   top: inherit;
   background-color: inherit;
+  overflow: scroll;
+  flex: 1;
+}
+main > .wrapper {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+main article h1 {
+  margin: 5rem 0 3rem 0;
 }
 
 main nav {
