@@ -134,6 +134,22 @@
     </article>
 
     <article>
+      <h1 id="conferences"><a href="#conferences" class="permalink" title=
+      "Link to this section"></a>Conferences</h1>
+      <p>
+        I'm sometimes invited to speak about lifestyle, freedom or development.
+      </p>
+      <p>
+        Some talks I've been invited to are:
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.infoq.com/fr/presentations/codeurs-en-seine-vincent-agnano-digital-nomad/" target=_blank>Living as a Digital Nomad (French)</a>
+        </li>
+      </ul>
+    </article>
+
+    <article>
       <h1 id="lifestyle"><a href="#lifestyle" class="permalink" title=
       "Link to this section"></a>Lifestyle</h1>
 
@@ -213,19 +229,27 @@
         var em = document.querySelector('.email');
         em.onmouseover = function(evt) {
           var text = "{first}@{domain}"
-                     .replace('{first}', "vincent.agnano+githubio")
-                     .replace('{domain}', "scopyleft.fr");
+                     .replace('{first}', "v.agnano+site")
+                     .replace('{domain}', "protonmail.com");
           evt.target.attributes['href'].value = "mailto:{text}".replace('{text}', text);
           evt.target.title = "Envoyer un mail à {text}".replace('{text}', text);
         }
   </script>
+
+  <!-- Matomo -->
   <script type="text/javascript">
-      var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-2011654-7']);_gaq.push(['_trackPageview']);
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript';ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' :'http://www') + '.google-analytics.com/ga.js';
-      (document.getElementsByTagName('head')[0] ||document.getElementsByTagName('body')[0]).appendChild(ga);
-      })();
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//stats.anonym.dev/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '10']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
   </script>
+  <!-- End Matomo Code -->
 </body>
 </html>
