@@ -11,6 +11,8 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <meta name="author" content="Vincent Agnano">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" media="screen and (max-width: 960px)" href=
+  "styles/mobile.css">
   <link rel="stylesheet" media="screen and (min-width: 961px)" href=
   "styles/medium.css">
 </head>
@@ -18,19 +20,31 @@
   <header><a href="#developpeur-web" title=
   "Aller au contenu">∨</a></header>
   <main>
-    <header>
-      <h2><a href="http://vinyll.github.io/">Vincent Agnano <small>aka
-      Vinyll</small></a></h2>
+    <div class="wrapper">
+      <header>
+        <h2><a href="http://vinyll.github.io/">Vincent Agnano <small>aka
+        Vinyll</small></a></h2>
 
-      <h1>Développeur Web JavaScript / Python <span>Nomade</span></h1>
-      <nav><a href="https://github.com/vinyll"><img src=
-      "images/github.svg" alt="Github"></a> <a href=
-      "https://twitter.com/vinyll"><img src="images/twitter.svg" alt=
-      "Twitter"></a> <a href=
-      "https://www.linkedin.com/in/vincentagnano"><img src=
-      "images/linkedin.svg" alt="LinkedIn"></a></nav>
-      <a href="/" lang="en" class="switch-i18n" title="Read in English">in English</a>
-    </header>
+        <h1>Développeur Web / Python / JavaScript. <span>Nomad</span></h1>
+        <nav class=social>
+          <a href="https://github.com/vinyll">
+            <img src="images/github.svg" alt="Github">
+          </a>
+          <a href="https://gitlab.com/vinyll">
+            <img src="images/gitlab.svg" alt="Gitlab">
+          </a>
+          <a href="https://mastodon.social/vinyll">
+            <img src="images/mastodon.svg" alt="Mastodon">
+          </a>
+          <a href="https://twitter.com/vinyll">
+            <img src="images/twitter.svg" alt="Twitter">
+          </a>
+          <a href="https://www.linkedin.com/in/vincentagnano">
+            <img src="images/linkedin.svg" alt="LinkedIn">
+          </a>
+        </nav>
+        <a href="/" lang="en" class="switch-i18n" title="Read in English">in English</a>
+      </header>
 
     <section>
       <h1 id="developpeur-web"><a href="#developpeur-web" class=
@@ -231,6 +245,7 @@
       davantage de <a href="https://github.com/vinyll">regarder le
       code</a> produit, qui lui est plus transparent.</p>
     </section>
+  </div>
   </main>
   <script>
         var em = document.querySelector('.email');
